@@ -236,7 +236,7 @@ const Home: NextPage = () => {
         </Project>
         <Project
           title="Portfolio"
-          link="/#"
+          link="https://github.com/vilchyyy/portfolio"
           image="/portfolio.png"
         >
           <IconBrandCss3 height={70} width={50} stroke={1.25} />
@@ -246,7 +246,7 @@ const Home: NextPage = () => {
         <Project
           title="LoL item randomizer"
           link="https://github.com/vilchyyy/item-randomizer-ee"
-          image="/portfolio.png"
+          image="/itemrandomizer.png"
         >
           <IconBrandNextjs height={70} width={50} stroke={1.25} />
           <IconBrandJavascript height={70} width={50} stroke={1.25} />
