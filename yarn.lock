@@ -383,6 +383,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@radix-ui/react-icons@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@radix-ui/react-icons/-/react-icons-1.1.1.tgz#38d2aa548035dd3b799c169bd17177b1cec3152b"
+  integrity sha512-xc3wQC59rsFylVbSusQCrrM+6695ppF730Q6yqzhRdqDcRNWIm2R6ngpzBoSOQMcwnq4p805F+Gr7xo4fmtN1A==
+
 "@rushstack/eslint-patch@^1.1.3":
   version "1.1.4"
   resolved "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.4.tgz"
@@ -394,6 +399,19 @@
   integrity sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==
   dependencies:
     tslib "^2.4.0"
+
+"@tabler/icons-react@^2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-2.1.1.tgz#6080834deec9ba472535821de1dd97c79cc08c7e"
+  integrity sha512-nFwt6xT1LQQV+sHobeHEI8ccnRYVp55u5CPLUVCUMqx1rg4EvTFus6pRCKRWsJeIulRaL63ASlgke0tRotbCiw==
+  dependencies:
+    "@tabler/icons" "2.1.1"
+    prop-types "^15.7.2"
+
+"@tabler/icons@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-2.1.1.tgz#412055a3635f629dadf5c2aa11f88784bb517e78"
+  integrity sha512-mg3ggGdTz0KYnombTj3Ur1RsLGMF5j0f+SxLvVBNlt+a4Qb4Ml++7NHWy7pBi6RWpqyroywwkvBeMutnJu9HfQ==
 
 "@types/hoist-non-react-statics@*":
   version "3.3.1"
@@ -1830,7 +1848,7 @@ prelude-ls@^1.2.1:
   resolved "https://registry.npmjs.org/prelude-ls/-/prelude-ls-1.2.1.tgz"
   integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
 
-prop-types@^15.8.1:
+prop-types@^15.7.2, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==

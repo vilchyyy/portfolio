@@ -2,7 +2,7 @@ import { motion } from "framer-motion"
 import styled from "styled-components"
 import { highlight } from "../styles/globalStyles"
 import { Technology } from "./Technology"
-import { TimelineTechnology } from "./TimelineTechnology"
+import { TimelineEvent } from "./TimelineEvent"
 import logo from '../public/logos/reactjs-fill.svg'
 import { useWindowSize } from "usehooks-ts"
 
@@ -64,40 +64,40 @@ export const Timeline: React.FC<any> = (props) => {
     
     return (
         width > 1200 ? <MainTimeline>
-            { props.technologies.map((technology: any) => {
+            { props.events.map((event: any) => {
                 ctr++;
                 if (ctr % 2 === 0) 
                     return (
                     <>
-                        <Date>{technology.date}</Date>
+                        <Date>{event.date}</Date>
                         <Line />
-                        <TimelineTechnology imgWidth = {technology.imgWidth} imgHeight = {technology.imgHeight} title = {technology.title} image = {technology.logo} description = {technology.description} />
+                        <TimelineEvent imgWidth = {event.imgWidth} imgHeight = {event.imgHeight} title = {event.title} image = {event.logo} description = {event.description} />
                     </>
                     )
                 else 
                     return (
                         <> 
-                            <TimelineTechnology imgWidth = {technology.imgWidth} imgHeight = {technology.imgHeight} title = {technology.title} image = {technology.logo} description = {technology.description} />
+                            <TimelineEvent imgWidth = {event.imgWidth} imgHeight = {event.imgHeight} title = {event.title} image = {event.logo} description = {event.description} />
                             <Line />
-                            <Date>{technology.date}</Date>
+                            <Date>{event.date}</Date>
                         </>
                     )
             })}
 
         </MainTimeline> 
         : <MobileTimeline>
-            { props.technologies.map((technology: any) => {
+            { props.events.map((event: any) => {
                 return (
                     <>
                         <div style={{"display": "grid"}}>
                             <Line /> 
-                            <Date>{technology.date}</Date>
+                            <Date>{event.date}</Date>
                             <Line />
                         </div>
 
                         
                         
-                        <TimelineTechnology imgWidth = {technology.imgWidth} imgHeight = {technology.imgHeight} title = {technology.title} image = {technology.logo} description = {technology.description} />
+                        <TimelineEvent imgWidth = {event.imgWidth} imgHeight = {event.imgHeight} title = {event.title} image = {event.logo} description = {event.description} />
 
                    
                     

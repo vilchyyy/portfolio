@@ -43,9 +43,9 @@ export const Technology: React.FC<any> = (props) => {
     `
 
     return (
-        <MainTechnology>
+        <MainTechnology transition={{ duration: 0.7 }} initial={{ opacity: 0, y: 200 }} viewport={{ once: true }} whileInView={{ opacity: 1, y: 0 }}>
             <ImageWrapper>
-                <Image src={props.image} width={"150px"} height={"150px"} />
+                <Image src={props.image} width={"150px"} height={"150px"} alt="logo" />
             </ImageWrapper>
 
             <Title>{props.title}</Title>
