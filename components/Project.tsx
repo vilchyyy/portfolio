@@ -49,6 +49,7 @@ const Icons = styled.div`
     display: flex;
     justify-content: center;
     gap: 0.7em;
+    flex-wrap: wrap;
 
 `
 
